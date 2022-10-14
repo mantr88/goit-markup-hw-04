@@ -137,6 +137,29 @@ img {
     padding-bottom: 32px;
 }
 
+.email-icon {
+    width: 16px;
+    height: 12px;
+    fill: var(--second-font-color);
+}
+
+.email-icon:hover,
+.email-icon:focus {
+    fill: var(--main-color)
+}
+
+.tel-icon {
+    width: 10px;
+    height: 16px;
+    fill: var(--second-font-color);
+}
+
+.tel-icon:hover,
+.tel-icon:focus {
+    fill: var(--main-color);
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -154,11 +177,14 @@ img {
         /* Studio page */
             /* main */
             /* Hero */
+
+
+
 .hero {
     background-color: var(--secondary-bg-color);
     text-align: center;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .hero-title {
@@ -188,12 +214,6 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    
-
-    
-
-
-
 }
 
 .hero-button:hover,
@@ -201,8 +221,37 @@ img {
     background-color: var(--hero-button-bg-color);
 }
 
+.overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
         /* our-preferences */
 
+.icon-box {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--third-bg-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 102.34px;
+    padding-right: 102.34px;
+    
+}
+
+.icon-preferences {
+    width: 70px;
+    height: 70px;
+    
+}
 .preferences-title {
     margin-bottom: 10px;
 
