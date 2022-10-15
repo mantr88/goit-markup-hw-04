@@ -10,6 +10,7 @@
     --second-font-color:#757575;
     --white-font-color:#ffffff;
     --footer-font-color:rgba(255, 255, 255, 0.6);
+    --footer-icon-bg-color:rgba(255, 255, 255, 0.1);
 
     --card-set-gap: 30px;
 }
@@ -464,7 +465,7 @@ a {
 .filter-button:focus {
     color: var(--white-font-color);
     background-color: var(--main-color);
-    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
 }
 
         /* our-project */
@@ -480,8 +481,11 @@ a {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
+}
 
-    
+.our-project > .item:hover,
+.our-project > .item:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .case-title-block {
@@ -505,17 +509,21 @@ a {
             /* Footer */
 
 .bottom {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
     color: var(--white-font-color);
     background-color: var(--secondary-bg-color);
     font-size: 14px;
-line-height: 1.7;
+    line-height: 1.7;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footter-conteiner {
+.wrapper {
     display: flex;
+    align-items: center;
+}
+
+.contacts-box {
+    margin-right: 70px;
 }
 
 .accent-logo-bottom {
@@ -536,7 +544,6 @@ line-height: 1.7;
 
 .down {
     color: var(--footer-font-color);
-    
 }
 
 .down:hover,
@@ -558,39 +565,13 @@ line-height: 1.7;
     text-transform: uppercase;
 }
 
-/* .footter-conteiner {
-    display:flex;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
-    
+.social-list {
+    padding-left: 0;
+    padding-top: 0;
 }
 
-.footter-conteiner > .wrapper {
-    flex-basis: calc(100% / 6 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-} */
-/* 
-.clients-link {
-    display: block;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+.social-icon-link {
+    background-color: var(--footer-icon-bg-color);
 }
 
-.clients-list > .item:hover,
-.clients-list > .item:focus {
-     border: 1px solid var(--main-color);
-}
 
-.clients-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-bg-color)
-}
-
-.clients-list > .item:hover .clients-icon,
-.clients-list > .item:focus .clients-icon {
-     fill:var(--main-color)
-} */
