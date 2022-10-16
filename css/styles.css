@@ -63,13 +63,10 @@ a {
         
             /* header */        
 
-.page-top {
-   border-bottom: 1px solid #ECECEC;
-}
-
 .main-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav {
@@ -127,6 +124,7 @@ a {
 .contacts {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .contacts .item +.item {
@@ -134,6 +132,9 @@ a {
 }
 
 .link-contacts {
+    display: flex;
+    align-items: center;
+
     text-decoration: none;
     color: var(--second-font-color);
     padding-top: 32px;
@@ -141,6 +142,7 @@ a {
 }
 
 .email-icon {
+    margin-right: 10px;
     width: 16px;
     height: 12px;
     fill: var(--second-font-color);
@@ -154,6 +156,7 @@ a {
 }
 
 .tel-icon {
+    margin-right: 10px;
     width: 10px;
     height: 16px;
     fill: var(--second-font-color);
@@ -177,10 +180,7 @@ a {
             /* main */
             /* Hero */
 
-
-
 .hero {
-    background-color: var(--hero-bg-color);
     text-align: center;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -189,7 +189,6 @@ a {
 .hero-title {
     margin-bottom: 30px;
     
-
     color: var(--white-font-color);
     font-weight: 900;
     font-size: 44px;
@@ -243,7 +242,6 @@ a {
     padding-bottom: 25px;
     padding-left: 102.34px;
     padding-right: 102.34px;
-    
 }
 
 .icon-preferences {
@@ -305,6 +303,7 @@ a {
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
 }
+
         /* our-team */
 
 .our-team {
@@ -321,6 +320,7 @@ a {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
+    padding-bottom: 30px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -336,6 +336,7 @@ a {
 }
 
 .our-team-professions {
+    margin-bottom: 16px;
     color: var(--second-font-color);
     font-size: 16px;
     line-height: 1.19;
@@ -349,20 +350,11 @@ a {
     margin-bottom: 10px;
 }
 
-.our-team-professions {
-    margin-bottom: 30px;
-}
 
 .social-list {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-    padding-top: 16px;
-}
-
-.social-list > .item:not(:last-child) {
-    margin-right: 10px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-icon-link {
@@ -377,6 +369,7 @@ a {
 .social-icon-link:focus {
     background-color: var(--main-color);
 }
+
 .social-icon {
     width: 20px;
     height: 20px;
@@ -564,11 +557,6 @@ a {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-}
-
-.footer-social-list {
-    padding-left: 0;
-    padding-top: 0;
 }
 
 .social-icon-link {
